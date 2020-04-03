@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-cpp",
+  "version": "1.0.0",
+  "description": "An example usage of N-API to call C++ code from NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-gyp": "^6.1.0"
+  },
+  "gypfile": true,
+  "dependencies": {
+      "node-addon-api": "^2.0.0",
+      "express": "^4.15.2"
+  }
+}
