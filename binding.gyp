@@ -9,10 +9,11 @@
 	    "src/Wrappers.cpp"
         ],
         'include_dirs': [
-            "<!@(node -p \"require('node-addon-api').include\")"
+            "<!@(node -p \"require('node-addon-api').include\")",
+	    "include"
         ],
         'libraries': [
-	    "<(module_root_dir)/Hello.a"
+	    "<(module_root_dir)/lib/Hello.a"
 	],
         'dependencies': [
             "<!(node -p \"require('node-addon-api').gyp\")",
